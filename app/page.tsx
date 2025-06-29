@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Image from 'next/image'
 
 import { useState, useEffect } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -237,11 +238,11 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 text-center z-10 relative">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                  <Image
-                  src="/my-photo.jpg" // replace with your actual filename
+                  src="/Profile.jpg" // replace with your actual filename
                   alt="My portrait"
-                  width={300}
-                  height={300}
-                  className="rounded-full object-cover mx-auto"
+                  width={200}
+                  height={200}
+                  className="rounded-full object-cover mx-auto aspect-square"
                   />
 
 
@@ -825,7 +826,7 @@ export default function Portfolio() {
                         className="border-purple-300 text-purple-600 hover:bg-purple-50 bg-white/80 hover:shadow-lg hover:shadow-purple-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/RishyendraRamakuri/PathCrafter" target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           View Code
                         </a>
@@ -836,7 +837,7 @@ export default function Portfolio() {
                         className="border-pink-300 text-pink-600 hover:bg-pink-50 bg-white/80 hover:shadow-lg hover:shadow-pink-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://path-crafter-21.vercel.app/" target="_blank" rel="noopener noreferrer">
                           <Globe className="w-4 h-4 mr-2" />
                           Live Demo
                         </a>
@@ -960,7 +961,7 @@ export default function Portfolio() {
                 type: "Professional",
                 color: "from-orange-200 to-red-200",
                 textColor: "text-orange-700",
-                link: "#",
+                link: "https://www.coursera.org/account/accomplishments/verify/8QDGINLJBRF4",
               },
               {
                 title: "Data Structures & Algorithms",
@@ -968,7 +969,7 @@ export default function Portfolio() {
                 type: "Professional",
                 color: "from-orange-200 to-red-200",
                 textColor: "text-orange-700",
-                link: "#",
+                link: "https://www.coursera.org/account/accomplishments/verify/8QDGINLJBRF4",
               },
               {
                 title: "Programming in Java",
@@ -976,7 +977,7 @@ export default function Portfolio() {
                 type: "Academic",
                 color: "from-blue-200 to-indigo-200",
                 textColor: "text-blue-700",
-                link: "#",
+                link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs43/Course/NPTEL24CS43S95740420230657843.pdf",
               },
               {
                 title: "DSA Gold Certification",
@@ -984,7 +985,7 @@ export default function Portfolio() {
                 type: "Gold",
                 color: "from-yellow-200 to-orange-200",
                 textColor: "text-yellow-700",
-                link: "#",
+                link: "https://smartinterviews.in/certificate/41fbef5d",
               },
               {
                 title: "Machine Learning with Python",
@@ -992,7 +993,7 @@ export default function Portfolio() {
                 type: "Professional",
                 color: "from-cyan-200 to-blue-200",
                 textColor: "text-cyan-700",
-                link: "#",
+                link: "https://www.coursera.org/account/accomplishments/verify/B5HLLPCEL64H",
               },
               {
                 title: "1st Prize IoT Hackathon",
@@ -1280,7 +1281,7 @@ export default function Portfolio() {
                       className="bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white border-0 flex-1 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                       asChild
                     >
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href="http://github.com/RishyendraRamakuri" target="_blank" rel="noopener noreferrer">
                         <Github className="w-5 h-5 mr-2" />
                         GitHub
                       </a>
@@ -1290,7 +1291,7 @@ export default function Portfolio() {
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white border-0 flex-1 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                       asChild
                     >
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/in/ramakuri-rishyendra-3645432b4/" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="w-5 h-5 mr-2" />
                         LinkedIn
                       </a>
@@ -1436,7 +1437,7 @@ export default function Portfolio() {
                   className="text-gray-500 hover:text-purple-600 transition-all duration-300 hover:scale-110"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="http://github.com/RishyendraRamakuri" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5" />
                   </a>
                 </Button>
@@ -1446,7 +1447,7 @@ export default function Portfolio() {
                   className="text-gray-500 hover:text-blue-600 transition-all duration-300 hover:scale-110"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/ramakuri-rishyendra-3645432b4/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </Button>
