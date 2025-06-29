@@ -242,7 +242,7 @@ export default function Portfolio() {
                   alt="My portrait"
                   width={150}
                   height={150}
-                  className="rounded-full object-cover mx-auto aspect-square"
+                  className="rounded-full object-cover mx-auto"
                   />
 
 
