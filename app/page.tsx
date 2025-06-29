@@ -236,13 +236,14 @@ export default function Portfolio() {
 
         <div className="container mx-auto px-6 text-center z-10 relative">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-              className="w-32 h-32 mx-auto mb-8 bg-gradient-to-r from-pink-200 to-purple-200 rounded-full flex items-center justify-center shadow-2xl shadow-purple-200/50"
-            >
-              <Sparkles className="w-16 h-16 text-purple-600" />
-            </motion.div>
+                 <Image
+                  src="/my-photo.jpg" // replace with your actual filename
+                  alt="My portrait"
+                  width={300}
+                  height={300}
+                  className="rounded-full object-cover mx-auto"
+                  />
+
 
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
               <span className="bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
