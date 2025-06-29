@@ -237,7 +237,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 text-center z-10 relative">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                  <Image
-                  src="/my-photo.jpg" // replace with your actual filename
+                  src="/Profile.jpg" // replace with your actual filename
                   alt="My portrait"
                   width={300}
                   height={300}
