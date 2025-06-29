@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Image from 'next/image'
 
 import { useState, useEffect } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
