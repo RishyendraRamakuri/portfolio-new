@@ -510,7 +510,7 @@ export default function Portfolio() {
 
             <TabsContent value="platforms" className="mt-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {["GitHub", "VS Code", "VMware", "Postman"].map((platform, index) => (
+                {["GitHub", "VS Code", "Docker", "Postman"].map((platform, index) => (
                   <motion.div
                     key={platform}
                     initial={{ opacity: 0, y: 20 }}
