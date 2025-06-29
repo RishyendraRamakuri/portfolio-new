@@ -240,9 +240,9 @@ export default function Portfolio() {
                  <Image
                   src="/Profile.jpg" // replace with your actual filename
                   alt="My portrait"
-                  width={100}
-                  height={100}
-                  className="rounded-full object-cover mx-auto"
+                  width={150}
+                  height={150}
+                  className="rounded-full object-cover mx-auto aspect-square"
                   />
 
 
