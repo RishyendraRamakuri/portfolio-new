@@ -119,7 +119,7 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#f9f6f1] via-[#f5f5f5] to-[#f9f6f1] relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 z-0">
         {/* Floating Orbs */}
