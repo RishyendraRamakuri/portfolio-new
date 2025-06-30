@@ -317,7 +317,7 @@ export default function Portfolio() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-white/70 border-purple-100 backdrop-blur-lg shadow-2xl shadow-purple-200/20 hover:shadow-purple-300/30 transition-all duration-300 hover:scale-105">
+              <Card className=bg-[#f9f6f1]/70 border-purple-100 backdrop-blur-lg shadow-2xl shadow-purple-200/20 hover:shadow-purple-300/30 transition-all duration-300 hover:scale-105>
                 <CardHeader>
                   <CardTitle className="text-gray-800 text-2xl">My Journey</CardTitle>
                 </CardHeader>
