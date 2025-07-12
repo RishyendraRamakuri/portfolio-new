@@ -119,7 +119,7 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#f9f6f1] via-[#f5f5f5] to-[#f9f6f1] relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 z-0">
         {/* Floating Orbs */}
@@ -240,9 +240,9 @@ export default function Portfolio() {
                  <Image
                   src="/Profile.jpg" // replace with your actual filename
                   alt="My portrait"
-                  width={200}
-                  height={200}
-                  className="rounded-full object-cover mx-auto aspect-square"
+                  width={161}
+                  height={161}
+                  className="rounded-full object-cover mx-auto "
                   />
 
 
@@ -317,7 +317,7 @@ export default function Portfolio() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-white/70 border-slate-200 backdrop-blur-lg shadow-2xl shadow-slate-200/20 hover:shadow-slate-300/30 transition-all duration-300 hover:scale-105">
+              <Card className="bg-[#f9f6f1]/70 border-purple-100 backdrop-blur-lg shadow-2xl shadow-purple-200/20 hover:shadow-purple-300/30 transition-all duration-300 hover:scale-105">
                 <CardHeader>
                   <CardTitle className="text-slate-800 text-2xl">My Journey</CardTitle>
                 </CardHeader>
@@ -510,7 +510,7 @@ export default function Portfolio() {
 
             <TabsContent value="platforms" className="mt-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {["GitHub", "VS Code", "VMware", "Postman"].map((platform, index) => (
+                {["GitHub", "VS Code", "Docker", "Postman"].map((platform, index) => (
                   <motion.div
                     key={platform}
                     initial={{ opacity: 0, y: 20 }}
