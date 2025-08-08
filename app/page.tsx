@@ -1019,7 +1019,7 @@ export default function Portfolio() {
                         className="border-blue-400/30 text-blue-400 hover:bg-blue-500/20 bg-white/10 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/RishyendraRamakuri/QuickCare" target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           View Code
                         </a>
@@ -1030,7 +1030,7 @@ export default function Portfolio() {
                         className="border-purple-400/30 text-purple-400 hover:bg-purple-500/20 bg-white/10 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="https://portfolio-ten-rho-70.vercel.app/quickcare.html" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4 mr-2" />
                           Live Demo
                         </a>
@@ -1090,7 +1090,7 @@ export default function Portfolio() {
                 type: "Professional",
                 color: "from-green-500 to-emerald-500",
                 textColor: "text-green-400",
-                link: "",
+                link: "https://www.hackerrank.com/certificates/iframe/f15756146775",
               },
               {
                 title: "Machine Learning with Python",
