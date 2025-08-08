@@ -104,7 +104,7 @@ export default function Portfolio() {
           type: "success",
           message: "Thank you! Your message has been sent successfully. I'll get back to you soon!",
         })
-        ;(e.target as HTMLFormElement).reset()
+          ; (e.target as HTMLFormElement).reset()
       } else {
         throw new Error("Failed to send message")
       }
@@ -216,9 +216,8 @@ export default function Portfolio() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`text-sm font-medium transition-all duration-300 hover:text-indigo-600 hover:scale-105 ${
-                      activeSection === item.toLowerCase() ? "text-indigo-600 scale-105" : "text-slate-600"
-                    }`}
+                    className={`text-sm font-medium transition-all duration-300 hover:text-indigo-600 hover:scale-105 ${activeSection === item.toLowerCase() ? "text-indigo-600 scale-105" : "text-slate-600"
+                      }`}
                   >
                     {item}
                   </button>
@@ -237,13 +236,13 @@ export default function Portfolio() {
 
         <div className="container mx-auto px-6 text-center z-10 relative">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                 <Image
-                  src="/Profile.jpg" // replace with your actual filename
-                  alt="My portrait"
-                  width={200}
-                  height={200}
-                  className="rounded-full object-cover mx-auto aspect-square"
-                  />
+            <Image
+              src="/Profile.jpg" // replace with your actual filename
+              alt="My portrait"
+              width={200}
+              height={200}
+              className="rounded-full object-cover mx-auto aspect-square"
+            />
 
 
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
@@ -456,8 +455,7 @@ export default function Portfolio() {
                     color: "from-yellow-200 to-orange-200",
                     textColor: "text-yellow-600",
                   },
-                  { name: "C++", icon: Cpu, color: "from-indigo-200 to-violet-200", textColor: "text-indigo-600" },
-                  { name: "C", icon: Zap, color: "from-green-200 to-emerald-200", textColor: "text-green-600" },
+                  { name: "MySQL", icon: Database, color: "from-cyan-200 to-blue-200", textColor: "text-cyan-600" },
                 ].map((skill) => (
                   <motion.div
                     key={skill.name}
@@ -484,7 +482,7 @@ export default function Portfolio() {
 
             <TabsContent value="tools" className="mt-8">
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {["Docker", "TensorFlow", "PyTorch", "FastAPI", "React", "Node.js", "SQL", "NoSQL"].map(
+                {["Node.js", "React", "FastAPI", "Next.js", "Docker", "SQL"].map(
                   (tool, index) => (
                     <motion.div
                       key={tool}
@@ -510,7 +508,7 @@ export default function Portfolio() {
 
             <TabsContent value="platforms" className="mt-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {["GitHub", "VS Code", "VMware", "Postman"].map((platform, index) => (
+                {["GitHub", "VS Code", "Postman", "Railway", "Render", "Vercel", "AWS"].map((platform, index) => (
                   <motion.div
                     key={platform}
                     initial={{ opacity: 0, y: 20 }}
@@ -721,7 +719,7 @@ export default function Portfolio() {
                         className="border-emerald-400 text-emerald-600 hover:bg-emerald-50 bg-white/80 hover:shadow-lg hover:shadow-emerald-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           View Code
                         </a>
@@ -732,7 +730,7 @@ export default function Portfolio() {
                         className="border-teal-400 text-teal-600 hover:bg-teal-50 bg-white/80 hover:shadow-lg hover:shadow-teal-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                           <Globe className="w-4 h-4 mr-2" />
                           Live Demo
                         </a>
@@ -755,7 +753,7 @@ export default function Portfolio() {
                   <div className="md:w-2/3 p-8">
                     <CardHeader className="p-0 mb-6">
                       <CardTitle className="text-slate-800 text-2xl mb-2 flex items-center gap-2">
-                        🔷 PathCrafter - AI-Powered Learning Path Generator
+                        🔷 AI-Powered Learning Path Generator
                       </CardTitle>
                       <div className="flex flex-wrap gap-2">
                         {["React.js", "Node.js", "Express.js", "MongoDB", "Python", "Flask", "Render", "Vercel"].map(
@@ -854,32 +852,31 @@ export default function Portfolio() {
                 </div>
               </Card>
             </motion.div>
-
-            {/* Project 3: 5G Anomaly Detection */}
+            {/*3 Project Details*/}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-white/70 border-orange-100 backdrop-blur-lg overflow-hidden shadow-2xl shadow-orange-200/20 hover:shadow-orange-300/30 transition-all duration-300 hover:scale-105">
+              <Card className="bg-white/70 border-blue-100 backdrop-blur-lg overflow-hidden shadow-2xl shadow-blue-200/20 hover:shadow-blue-300/30 transition-all duration-300 hover:scale-105">
                 <div className="md:flex">
-                  <div className="md:w-1/3 bg-gradient-to-br from-orange-100 to-red-100 p-8 flex items-center justify-center">
+                  <div className="md:w-1/3 bg-gradient-to-br from-blue-100 to-indigo-100 p-8 flex items-center justify-center">
                     <div className="text-center">
-                      <Zap className="w-16 h-16 text-orange-600 mx-auto mb-4" />
-                      <h3 className="text-2xl font-bold text-slate-800">5G Detection</h3>
-                      <p className="text-orange-600">Network Security</p>
+                      <Hospital className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                      <h3 className="text-2xl font-bold text-slate-800">Healthcare Platform</h3>
+                      <p className="text-blue-600">Appointment Management</p>
                     </div>
                   </div>
                   <div className="md:w-2/3 p-8">
                     <CardHeader className="p-0 mb-6">
-                      <CardTitle className="text-slate-800 text-2xl mb-2">5G Anomaly Detection using LSTM</CardTitle>
+                      <CardTitle className="text-slate-800 text-2xl mb-2">Multi-Tenant Healthcare Appointment Platform</CardTitle>
                       <div className="flex flex-wrap gap-2">
-                        {["Python", "LSTM", "TensorFlow", "Deep Learning", "5G Networks"].map((tech) => (
+                        {["Next.js", "Node.js", "MongoDB", "Razorpay", "Scalable Architecture"].map((tech) => (
                           <Badge
                             key={tech}
                             variant="secondary"
-                            className="bg-gradient-to-r from-orange-100 to-red-100 text-orange-800 border-orange-200 hover:scale-105 transition-transform duration-200"
+                            className="bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 border-blue-200 hover:scale-105 transition-transform duration-200"
                           >
                             {tech}
                           </Badge>
@@ -888,33 +885,34 @@ export default function Portfolio() {
                     </CardHeader>
                     <CardContent className="p-0 space-y-4">
                       <p className="text-slate-600">
-                        Developed an advanced LSTM model to detect network anomalies in 5G logs, achieving exceptional
-                        prediction accuracy on a massive dataset.
+                        [cite_start]Developed a scalable full-stack platform for hospital appointment scheduling, enabling dynamic bookings, payments, and queue management. [cite: 40]
                       </p>
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="text-center p-3 rounded-lg bg-orange-100 border border-orange-200 shadow-lg">
-                          <div className="text-2xl font-bold text-orange-600">95%</div>
-                          <p className="text-sm text-slate-500">Prediction Accuracy</p>
+                        <div className="text-center p-3 rounded-lg bg-blue-100 border border-blue-200 shadow-lg">
+                          <div className="text-2xl font-bold text-blue-600">Dynamic</div>
+                          <p className="text-sm text-slate-500">Bookings & Payments</p>
                         </div>
-                        <div className="text-center p-3 rounded-lg bg-red-100 border border-red-200 shadow-lg">
-                          <div className="text-2xl font-bold text-red-600">1M+</div>
-                          <p className="text-sm text-slate-500">Dataset Entries</p>
+                        <div className="text-center p-3 rounded-lg bg-indigo-100 border border-indigo-200 shadow-lg">
+                          <div className="text-2xl font-bold text-indigo-600">Multi-Tenant</div>
+                          <p className="text-sm text-slate-500">Hospital Support</p>
                         </div>
                       </div>
                       <ul className="space-y-2 text-slate-600 text-sm">
-                        <li>• Implemented LSTM neural network for time-series anomaly detection</li>
-                        <li>• Processed and analyzed over 1 million 5G network log entries</li>
-                        <li>• Achieved industry-leading 95% accuracy in anomaly prediction</li>
+                        [cite_start]<li>• Built a centralized login gateway for hospital authentication with secure redirection. [cite: 41]</li>
+                        [cite_start]<li>• Integrated mock and live Razorpay payments for various transactions. [cite: 42]</li>
+                        [cite_start]<li>• Designed modular admin dashboards for real-time management of doctors, queues, and patient histories. [cite: 43]</li>
+                        [cite_start]<li>• Created a responsive, secure user-facing interface for booking, login/signup, reviews, and personalized appointment flows. [cite: 44]</li>
+                        [cite_start]<li>• Deployed frontend on Vercel and backend on Railway with robust CORS and environment configuration. [cite: 45]</li>
                       </ul>
                     </CardContent>
                     <div className="flex gap-3 mt-6">
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-orange-400 text-orange-600 hover:bg-orange-50 bg-white/80 hover:shadow-lg hover:shadow-orange-200/30 transition-all duration-300"
+                        className="border-blue-400 text-blue-600 hover:bg-blue-50 bg-white/80 hover:shadow-lg hover:shadow-blue-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
                           View Code
                         </a>
@@ -922,12 +920,12 @@ export default function Portfolio() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-red-400 text-red-600 hover:bg-red-50 bg-white/80 hover:shadow-lg hover:shadow-red-200/30 transition-all duration-300"
+                        className="border-indigo-400 text-indigo-600 hover:bg-indigo-50 bg-white/80 hover:shadow-lg hover:shadow-indigo-200/30 transition-all duration-300"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="" target="_blank" rel="noopener noreferrer">
                           <Globe className="w-4 h-4 mr-2" />
-                          Research Paper
+                          Live Demo
                         </a>
                       </Button>
                     </div>
@@ -996,12 +994,12 @@ export default function Portfolio() {
                 link: "https://www.coursera.org/account/accomplishments/verify/B5HLLPCEL64H",
               },
               {
-                title: "1st Prize IoT Hackathon",
-                org: "Competition",
-                type: "Achievement",
+                title: "Introduction to SQL",
+                org: "Simplilearn",
+                type: "Professional",
                 color: "from-emerald-200 to-teal-200",
                 textColor: "text-emerald-700",
-                link: "#",
+                link: "",
               },
             ].map((cert, index) => (
               <motion.div
@@ -1372,11 +1370,10 @@ export default function Portfolio() {
 
                     {submitStatus.type && (
                       <div
-                        className={`p-4 rounded-xl ${
-                          submitStatus.type === "success"
+                        className={`p-4 rounded-xl ${submitStatus.type === "success"
                             ? "bg-emerald-100 border border-emerald-200 text-emerald-700"
                             : "bg-red-100 border border-red-200 text-red-700"
-                        }`}
+                          }`}
                       >
                         {submitStatus.message}
                       </div>
