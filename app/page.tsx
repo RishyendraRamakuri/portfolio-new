@@ -232,7 +232,7 @@ export default function Portfolio() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-lg opacity-50"></div>
                     <Image
-                      src="/Profile.jpg"
+                      src="/Profile.png"
                       alt="Ramakuri Rishyendra"
                       width={120}
                       height={120}
