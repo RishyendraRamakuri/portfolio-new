@@ -361,7 +361,7 @@ export default function Portfolio() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
+                  className="border-2 border-white/40 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
                   onClick={() => scrollToSection("contact")}
                 >
                   <Send className="w-5 h-5 mr-2" />
@@ -478,12 +478,12 @@ export default function Portfolio() {
                     whileInView={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     viewport={{ once: true }}
-                    className="text-4xl font-bold text-cyan-400 mb-2"
+                    className="text-4xl font-bold text-white mb-2"
                   >
                     5+
                   </motion.div>
                   <p className="text-white font-medium">Projects Completed</p>
-                  <p className="text-white/60 text-sm">Full-stack & AI/ML</p>
+                  <p className="text-white/80 text-sm">Full-stack & AI/ML</p>
                 </div>
               </Card>
             </motion.div>
@@ -501,12 +501,12 @@ export default function Portfolio() {
                     whileInView={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-4xl font-bold text-blue-400 mb-2"
+                    className="text-4xl font-bold text-white mb-2"
                   >
                     5+
                   </motion.div>
                   <p className="text-white font-medium">Certifications</p>
-                  <p className="text-white/60 text-sm">Professional & Academic</p>
+                  <p className="text-white/80 text-sm">Professional & Academic</p>
                 </div>
               </Card>
             </motion.div>
